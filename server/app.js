@@ -54,13 +54,13 @@ module.exports.io = io;
 // WebSocket setup for handling connections
 io.on('connection', (socket) => {
     console.log('A secretary or patient connected:', socket.id);
-  
+
     // Notify the secretary of new messages
     socket.on('notifySecretary', (data) => {
         // Emit the new message event to all connected secretaries
         io.emit('newMessage', data); // You can target specific rooms or IDs if necessary
     });
-  
+
     // Handle disconnection
     socket.on('disconnect', () => {
         console.log('User disconnected');
