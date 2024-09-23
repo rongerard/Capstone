@@ -1,0 +1,12 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm --prefix client start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
